@@ -1,13 +1,3 @@
-locals {
-  main_region          = "us-east-1"
-
-}
-
-provider "aws" {
-  region = local.main_region
-}
-
-
 module "website_acm" {
   source  = "terraform-aws-modules/acm/aws"
   version = "~> 4.0"
