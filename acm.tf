@@ -1,3 +1,9 @@
+
+provider "aws" {
+  alias  = "us_east_1"
+  region = "us-east-1"
+}
+
 module "website_acm" {
   source  = "terraform-aws-modules/acm/aws"
   version = "~> 4.0"
