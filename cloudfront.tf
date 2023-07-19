@@ -1,5 +1,6 @@
 # ----------------------------------------------------------------- Locals --- #
 
+# TODO: use a random string instead of the subdomain name
 locals {
   s3_origin_id = "s3-origin-${var.subdomain_name}${var.domain_name}"
 }

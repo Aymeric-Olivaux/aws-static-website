@@ -6,3 +6,10 @@ terraform {
     }
   }
 }
+
+
+# Default Region
+provider "aws" {
+  alias = "eu_west_3"
+  region = "eu-west-3"
+}
