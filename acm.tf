@@ -3,7 +3,7 @@ module "website_acm" {
   version = "~> 4.0"
 
   providers = {
-    aws = aws.main_region
+    aws = aws.us_east_1
   }
 
   domain_name = "${var.subdomain_name}${var.domain_name}"
